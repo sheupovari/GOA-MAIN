@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e49687;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #97dcbd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #6b7c93;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+    <title>Four Card Feature Section</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+            <div class="card-content">
+                <h3 class="card-title">Sedans</h3>
+                <p class="card-text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            
+            <div class="card-content">
+                <h3 class="card-title">SUVs</h3>
+                <p class="card-text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+            </div>
+        </div>
+
+        <div class="card">
+           
+            <div class="card-content">
+                <h3 class="card-title">Luxury</h3>
+                <p class="card-text">Experience the luxury of driving a premium car with top-notch features and advanced technology for a first-class driving experience.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            
+            <div class="card-content">
+                <h3 class="card-title">Fleet</h3>
+                <p class="card-text">Explore our fleet of vehicles for business trips or vacations. We offer reliable cars that meet your needs and fit your budget.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

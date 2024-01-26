@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #a1aeed;
+        }
+
+        .card {
+            background-color: #1d1f29;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 300px;
+            max-width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+            color: #fad0d0;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .title span {
+            color: #50bfe6;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .stat-label {
+            font-size: 12px;
+        }
+    </style>
+    <title>Stats Preview Card Component</title>
+</head>
+<body>
+    <div class="card">
+        
+        <div class="card-content">
+            <h2 class="title">Get <span>insights</span> that help your business grow.</h2>
+            <p class="text">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3 class="stat-number">10k+</h3>
+                    <p class="stat-label">Companies</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">314</h3>
+                    <p class="stat-label">Templates</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">12M+</h3>
+                    <p class="stat-label">Queries</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
