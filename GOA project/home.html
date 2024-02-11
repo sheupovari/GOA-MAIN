@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Coding Academy Goa</title>
+
+    
+</head>
+<body>
+
+    <header>
+        <h1>Coding Academy Goa</h1>
+        <p>Your Great Chance</p>
+    </header>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("goa\ best.jpng.jpg") center/cover no-repeat fixed;
+            transition: background 0.5s ease-in-out;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #29b31c;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5cc231;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #5d9634;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #d94404; 
+        }
+
+        section {
+            padding: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            color: #343a40;
+        }
+
+        section p {
+            color: #6c757d;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <nav>
+        <a href="home.html">Home </a>
+        
+        <a href="about us.html">About Us</a>
+        <a href="https://www.facebook.com/groups/1133392237455746/?__tn__=%3C">Contact</a>
+        <a href="login.html"> login </a>
+    </nav>
+
+    <section id="home" class="show">
+        <h2>Welcome to Coding Academy Goa</h2>
+        <p>Empowering individuals with the skills to thrive in the digital era.</p>
+    </section>
+
+    <section id="courses" class="show">
+        <h2>Our Courses</h2>
+        <p>we help you study everything:</p>
+        <ul>
+            <li>Full Stack Web Development</li>
+            <li>Data Science and Machine Learning</li>
+            <li>Software Engineering Principles</li>
+        </ul>
+    </section>
+
+    <section id="about" class="show">
+        <h2>About Us</h2>
+        <p>We are a best academy not only in our country, in the world</p>
+    </section>
+
+    <section id="contact" class="show">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for more information:</p>
+    
+    </section>
+
+    <footer>
+        Coding Academy Goa | Designed by Saba (future coder)
+    </footer>
+
+</body>
+</html>
