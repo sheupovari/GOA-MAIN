@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide any overflow */
+        }
+
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+            z-index: -1; /* Place it behind other content */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content appears above the video */
+            text-align: center;
+            color: #ffffff; /* Set text color to white */
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffcc00; /* Set heading text color to yellow */
+            text-align: center;
+            animation: pulse 2s ease-in-out infinite alternate;
+        }
+
+        h3 {
+            color: #ffcc00; /* Set heading text color to yellow */
+            margin-top: 20px;
+            font-size: 18px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 10px; /* Add padding to make the background visible */
+            border-radius: 5px; /* Add rounded corners */
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ffcc00; /* Set button background color to yellow */
+            color: #000000; /* Set button text color to black */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #e0ac00; /* Darken button color on hover */
+        }
+
+        button a {
+            text-decoration: none;
+            color: #000000; /* Set button text color to black */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Section -->
+    <video autoplay muted loop id="background-video">
+        <source src="1489922007.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <h1>GOA</h1>
+        <h1>About Us</h1>
+        <h3>We are one of the best programming academies in Georgia.</h3>
+        <h3>We not only help you learn coding,</h3>
+        <h3>we also offer math and English lessons.</h3>
+        <h3>Not only that, we guarantee that you will study programming in 1 year or less, and we'll hire you here!</h3>
+        <h3>We hope you make the right decision :D</h3>
+        <button><a href="https://www.facebook.com/100048915879224/">Learn More</a></button>
+    </div>
+</body>
+</html>
